@@ -14,6 +14,7 @@ jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
+      - run: echo "🎉 This workflow was called by another workflow"
       - uses: actions/labeler@v4
         with:
           repo-token: ${{ secrets.token }}
